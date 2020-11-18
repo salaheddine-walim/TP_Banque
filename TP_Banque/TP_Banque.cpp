@@ -2,10 +2,21 @@
 //
 
 #include <iostream>
-
+#include "Compte.h"
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    //Instanciation d'un objet Compte 
+    Compte c(50003,"Ahmed Amine",8050.175);
+
+    //Consulation du solde avant le transfert
+    c.consulterSolde();
+
+    // Transfert d'argent
+    c.transfererArgent(c, 12000);
+
+    //Consultation du solde apres le transfert
+    c.consulterSolde();
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
