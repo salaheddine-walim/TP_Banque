@@ -15,6 +15,7 @@ int main()
     // Transfert d'argent
     c.transfererArgent(c, 12000);
 
+
     //Consultation du solde apres le transfert
     c.consulterSolde();
 }
